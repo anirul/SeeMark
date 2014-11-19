@@ -1,0 +1,336 @@
+// models and materials description
+{
+	// later on it will also contain :
+	// texture
+	// normal map (bump?)
+	"materials" :
+	[
+		{
+		"name" : "water",
+		"vertex_file" : "Shaders/WaterVert.glsl",
+		"fragment_file" : "Shaders/WaterFrag.glsl",
+		"vertex_constants" :
+		{
+			"fvLightPosition1" : [0.0, 60.0, -60.0],
+			"fvLightPosition2" : [0.0, 0.0, 0.0],
+			"fvLightPosition3" : [0.0, 0.0, 0.0],
+			"fvLightPosition4" : [0.0, 0.0, 0.0],
+			"fLightStrength1" : [0.5],
+			"fLightStrength2" : [0.0],
+			"fLightStrength3" : [0.0],
+			"fLightStrength4" : [0.0],
+			"matWorldInverse" :
+			[
+				1.0, 0.0, 0.0, 0.0,
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0, 1.0, 0.0,
+				0.0, 0.0, 0.0, 1.0
+			]
+		},
+		"fragment_constants" :
+		{
+			"fvAmbient" : [0.02, 0.02, 0.02, 1.0],
+			"fvLight1Color" : [0.015, 0.015, 0.298, 1.0],
+			"fvLight2Color" : [0.0, 0.0, 0.0, 0.0],
+			"fvLight3Color" : [0.0, 0.0, 0.0, 0.0],
+			"fvLight4Color" : [0.0, 0.0, 0.0, 0.0],
+			"fSpecularPower" : [3],
+			"fSpecularStrength" : [8],
+			"fBumpStrength" : [3],
+			"baseMap" : [0],
+			"bumpMap" : [1.4013e-45]
+		}
+	}
+	],
+	// models with associated material
+	"meshes" :
+	[
+	{
+		"name" : "bottle",
+		"file" : "Models/bottle.obj"
+	},
+	{
+		"name" : "buoyBottom",
+		"file" : "Models/buoyBottom.obj"
+	},
+	{
+		"name" : "buoyGlass",
+		"file" : "Models/buoyGlass.obj"
+	},
+	{
+		"name" : "buoyMiddle",
+		"file" : "Models/buoyMiddle.obj"
+	},
+	{
+		"name" : "boyPanel",
+		"file" : "Models/buoyPanel.obj"
+	},
+	{
+		"name" : "cube",
+		"file" : "Models/Cube_World_Tile.obj"
+	},
+	{
+		"name" : "safetyFloater",
+		"file" : "Models/safetyFloater.obj"
+	},
+	{
+		"name" : "safeteyFloaterStrap",
+		"file" : "Models/safetyFloaterStrap.obj"
+	}
+	],
+	"textures" :
+	[
+	// models textures
+	{
+		"name" : "metal",
+		"file" : "Textures/metal.jpg"
+	},
+	{
+		"name" : "MetalTxtr",
+		"file" : "Textures/MetalTxtr.jpg"
+	},
+	{
+		"name" : "stone",
+		"file" : "Textures/stone.jpg"
+	},
+	{
+		"name" : "wall",
+		"file" : "Textures/wall.png"
+	},
+	{
+		"name" : "WoodTxtr",
+		"file" : "Textures/WoodTxtr.jpg"
+	},
+		{
+		"name" : "water",
+		"file" : "Textures/water.jpg"
+	},
+	{
+		"name" : "water01",
+		"file" : "Textures/Water01.jpg"
+	},
+	{
+		"name" : "water02",
+		"file" : "Textures/Water02.jpg"
+	},
+	{
+		"name" : "normal01",
+		"file" : "Textures/WaterNormal1.tga"
+	},
+	{
+		"name" : "normal02",
+		"file" : "Textures/WaterNormal2.tga"
+	},
+	{
+		"name" : "normal",
+		"file" : "Textures/waveNM.png"
+	},
+	{
+		"name" : "bottle",
+		"file" : "Textures/bottle.png"
+	},
+	{
+		"name" : "light",
+		"file" : "Textures/light.png"
+	},
+	{
+		"name" : "safetyFloater",
+		"file" : "Textures/safetyFloater.png"
+	},
+
+	
+	// night skybox
+	{
+		"name" : "night_top",
+		"file" : "Textures/purplenebula_up.jpg"
+	},
+	{
+		"name" : "night_bottom",
+		"file" : "Textures/purplenebula_dn.jpg"
+	},
+	{
+		"name" : "night_left",
+		"file" : "Textures/purplenebula_lf.jpg"
+	},
+	{
+		"name" : "night_right",
+		"file" : "Textures/purplenebula_rt.jpg"
+	},
+	{
+		"name" : "night_front",
+		"file" : "Textures/purplenebula_ft.jpg"
+	},
+	{
+		"name" : "night_back",
+		"file" : "Textures/purplenebula_bk.jpg"
+	},
+	
+	// cloudy noon skybox
+	{
+		"name" : "cloudy_noon_top",
+		"file" : "Textures/cloudy_noon_UP.jpg"
+	},
+	{
+		"name" : "cloudy_noon_bottom",
+		"file" : "Textures/cloudy_noon_DN.jpg"
+	},
+	{
+		"name" : "cloudy_noon_left",
+		"file" : "Textures/cloudy_noon_LF.jpg"
+	},
+	{
+		"name" : "cloudy_noon_right",
+		"file" : "Textures/cloudy_noon_RT.jpg"
+	},
+	{
+		"name" : "cloudy_noon_front",
+		"file" : "Textures/cloudy_noon_FR.jpg"
+	},
+	{
+		"name" : "cloudy_noon_back",
+		"file" : "Textures/cloudy_noon_BK.jpg"
+	},
+	
+	// early morning skybox
+	{
+		"name" : "early_morning_top",
+		"file" : "Textures/early_morning_UP.jpg"
+	},
+	{
+		"name" : "early_morning_bottom",
+		"file" : "Textures/early_morning_DN.jpg"
+	},
+	{
+		"name" : "early_morning_left",
+		"file" : "Textures/early_morning_LF.jpg"
+	},
+	{
+		"name" : "early_morning_right",
+		"file" : "Textures/early_morning_RT.jpg"
+	},
+	{
+		"name" : "early_morning_front",
+		"file" : "Textures/early_morning_FR.jpg"
+	},
+	{
+		"name" : "early_morning_back",
+		"file" : "Textures/early_morning_BK.jpg"
+	},
+	
+	// evening skybox
+	{
+		"name" : "evening_top",
+		"file" : "Textures/evening_UP.jpg"
+	},
+	{
+		"name" : "evening_bottom",
+		"file" : "Textures/evening_DN.jpg"
+	},
+	{
+		"name" : "evening_left",
+		"file" : "Textures/evening_LF.jpg"
+	},
+	{
+		"name" : "evening_right",
+		"file" : "Textures/evening_RT.jpg"
+	},
+	{
+		"name" : "evening_front",
+		"file" : "Textures/evening_FR.jpg"
+	},
+	{
+		"name" : "evening_back",
+		"file" : "Textures/evening_BK.jpg"
+	},
+
+	// morning skybox
+	{
+		"name" : "morning_top",
+		"file" : "Textures/morning_UP.jpg"
+	},
+	{
+		"name" : "morning_bottom",
+		"file" : "Textures/morning_DN.jpg"
+	},
+	{
+		"name" : "morning_left",
+		"file" : "Textures/morning_LF.jpg"
+	},
+	{
+		"name" : "morning_right",
+		"file" : "Textures/morning_RT.jpg"
+	},
+	{
+		"name" : "morning_front",
+		"file" : "Textures/morning_FR.jpg"
+	},
+	{
+		"name" : "morning_back",
+		"file" : "Textures/morning_BK.jpg"
+	},
+
+	// stormy skybox
+	{
+		"name" : "stormy_top",
+		"file" : "Textures/stormy_UP.jpg"
+	},
+	{
+		"name" : "stormy_bottom",
+		"file" : "Textures/stormy_DN.jpg"
+	},
+	{
+		"name" : "stormy_left",
+		"file" : "Textures/stormy_LF.jpg"
+	},
+	{
+		"name" : "stormy_right",
+		"file" : "Textures/stormy_RT.jpg"
+	},
+	{
+		"name" : "stormy_front",
+		"file" : "Textures/stormy_FR.jpg"
+	},
+	{
+		"name" : "stormy_back",
+		"file" : "Textures/stormy_BK.jpg"
+	},
+
+	// game text
+	{
+		"name" : "game_title",
+		"file" : "Credits/titre.png"
+	},
+	{
+		"name" : "3DModeler",
+		"file" : "Credits/3DModeler.png"
+	},
+	{
+		"name" : "leadDesigner",
+		"file" : "Credits/leadDesigner.png"
+	},
+	{
+		"name" : "leadProgrammer",
+		"file" : "Credits/leadProgrammer.png"
+	},
+	{
+		"name" : "programmers",
+		"file" : "Credits/programmers.png"
+	},
+	{
+		"name" : "SFX_Music",
+		"file" : "Credits/SFX_Music.png"
+	},
+	{
+		"name" : "l1event0",
+		"file" : "Dialogs/l1event0.png"
+	},
+	{
+		"name" : "l1event1",
+		"file" : "Dialogs/l1event1.png"
+	},
+	{
+		"name" : "l1event2",
+		"file" : "Dialogs/l1event2.png"
+	}
+	]
+}

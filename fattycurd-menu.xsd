@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	
+	<xs:annotation>
+		<xs:documentation xml:lang="en">
+			DroneWar menu description
+			author : Frederic DUBOUCHET
+			e-mail : angel@calodox.org
+		</xs:documentation>
+	</xs:annotation>
+	
+	<!-- SET-VALUE-TYPE -->
+	<xs:complexType name="set-value-type">
+		<xs:attribute name="linked-to" type="xs:string" use="required"/>
+		<xs:attribute name="value" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	<!-- SUB-MENU-TYPE -->
+	<xs:complexType name="sub-menu-type">
+		<xs:attribute name="file" type="xs:string" use="required" />
+	</xs:complexType>
+ 	
+	<!-- MENU -->
+	<xs:element name="menu">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="set-value" type="set-value-type" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="sub-menu" type="sub-menu-type" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+			<!-- not implemented yet -->
+			<xs:attribute name="skin" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

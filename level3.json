@@ -1,0 +1,525 @@
+// level description
+{
+    "name" : "Level - 0",
+    // characters (playable and not)
+    "characters" :
+    [
+	{ // default character (playable?)
+	    "name" : "default",
+	    "position" :
+	    {
+			"x" : 0,
+			"y" : 1,
+			"z" : -2
+	    },
+		"scale" :
+		{
+			"x" : 1,
+			"y" : 1,
+			"z" : 1
+		},
+	    "orientation" :
+	    {
+			"w" : 1,
+			"x" : 0,
+			"y" : 0,
+			"z" : 0
+	    },
+	    "type" : "mesh",
+	    "model" : "bottle"
+	}
+    ],
+    // tiles that are making the world
+	"tiles" :
+    [
+    {
+			
+			"position" :
+			{
+				"x" : -12,
+				"y" : 0,
+				"z" : -12
+			},
+			"scale" :
+			{
+				"x" : 1.0,
+				"y" : 1.0,
+				"z" : 1.0
+			},
+			"orientation" :
+			{
+				"w" : 1,
+				"x" : 0,
+				"y" : 0,
+				"z" : 0
+			},
+			"model" : "safetyFloater",
+			"texture" : "safetyFloater"
+		},
+		{
+			
+			"position" :
+			{
+				"x" : 0,
+				"y" : 0,
+				"z" : -25
+			},
+			"scale" :
+			{
+				"x" : 1.0,
+				"y" : 1.0,
+				"z" : 1.0
+			},
+			"orientation" :
+			{
+				"w" : 1,
+				"x" : 0,
+				"y" : 0,
+				"z" : 0
+			},
+			"model" : "safetyFloater",
+			"texture" : "safetyFloater"
+			
+		},
+		{
+			
+			"position" :
+			{
+				"x" : -5,
+				"y" : 0,
+				"z" : -50
+			},
+			"scale" :
+			{
+				"x" : 1.0,
+				"y" : 1.0,
+				"z" : 1.0
+			},
+			"orientation" :
+			{
+				"w" : 1,
+				"x" : 0,
+				"y" : 0,
+				"z" : 0
+			},
+			"model" : "safetyFloater",
+			"texture" : "safetyFloater"
+			
+		},
+		{
+			
+			"position" :
+			{
+				"x" : 12,
+				"y" : 0,
+				"z" : -70
+			},
+			"scale" :
+			{
+				"x" : 1.0,
+				"y" : 1.0,
+				"z" : 1.0
+			},
+			"orientation" :
+			{
+				"w" : 1,
+				"x" : 0,
+				"y" : 0,
+				"z" : 0
+			},
+			"model" : "safetyFloater",
+			"texture" : "safetyFloater"
+			
+		},
+		{
+			
+			"position" :
+			{
+				"x" : 14,
+				"y" : 0,
+				"z" : -90
+			},
+			"scale" :
+			{
+				"x" : 1.0,
+				"y" : 1.0,
+				"z" : 1.0
+			},
+			"orientation" :
+			{
+				"w" : 1,
+				"x" : 0,
+				"y" : 0,
+				"z" : 0
+			},
+			"model" : "safetyFloater",
+			"texture" : "safetyFloater"
+			
+		},
+		{
+			
+			"position" :
+			{
+				"x" : 25,
+				"y" : 0,
+				"z" : -110
+			},
+			"scale" :
+			{
+				"x" : 1.0,
+				"y" : 1.0,
+				"z" : 1.0
+			},
+			"orientation" :
+			{
+				"w" : 1,
+				"x" : 0,
+				"y" : 0,
+				"z" : 0
+			},
+			"model" : "safetyFloater",
+			"texture" : "safetyFloater"
+			
+		},
+		{
+			
+			"position" :
+			{
+				"x" : 32,
+				"y" : 0,
+				"z" : -120
+			},
+			"scale" :
+			{
+				"x" : 1.0,
+				"y" : 1.0,
+				"z" : 1.0
+			},
+			"orientation" :
+			{
+				"w" : 1,
+				"x" : 0,
+				"y" : 0,
+				"z" : 0
+			},
+			"model" : "safetyFloater",
+			"texture" : "safetyFloater"
+			
+		},
+		{ // floating part of the buoy
+			"position" :
+			{
+				"x" : 13,
+				"y" : 0,
+				"z" : -170
+			},
+			"scale" :
+			{
+				"x" : 2.0,
+				"y" : 2.0,
+				"z" : 2.0
+			},
+			"orientation" :
+			{
+				"w" : 1,
+				"x" : 0,
+				"y" : 0,
+				"z" : 0
+			},
+			"model" : "buoyBottom",
+			"texture" : "metal"
+		},
+		{ // Middle part of the buoy
+			"position" :
+			{
+				"x" : 13,
+				"y" : 0,
+				"z" : -170
+			},
+			"scale" :
+			{
+				"x" : 2.0,
+				"y" : 2.0,
+				"z" : 2.0
+			},
+			"orientation" :
+			{
+				"w" : 1,
+				"x" : 0,
+				"y" : 0,
+				"z" : 0
+			},
+			"model" : "buoyMiddle",
+			"texture" : "metal"
+		},
+		{ // floating part of the buoy
+			"position" :
+			{
+				"x" : 13,
+				"y" : 0,
+				"z" : -170
+			},
+			"scale" :
+			{
+				"x" : 2.0,
+				"y" : 2.0,
+				"z" : 2.0
+			},
+			"orientation" :
+			{
+				"w" : 1,
+				"x" : 0,
+				"y" : 0,
+				"z" : 0
+			},
+			"model" : "buoyGlass",
+			"texture" : "light"
+		}
+	],
+	"water" :
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : 0,
+			"z" : 0
+		},
+		"scale" :
+		{
+			"x" : 1.0,
+			"y" : 1.0,
+			"z" : 1.0
+		},
+		"texture" : "water02",
+		"waveHeight" : 1.0,
+		"waveSpeed" : 3000.0,
+		"waveLength" : 30.0
+	},
+	"billboards" :
+	[
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -6,
+			"z" : -1
+		},
+		"scale" :
+		{
+			"x" : 25,
+			"y" : 5,
+			"z" : 10
+		},
+		"texture" : "l3event0"
+	},
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -6,
+			"z" : -1
+		},
+		"scale" :
+		{
+			"x" : 25,
+			"y" : 5,
+			"z" : 10
+		},
+		"texture" : "l3event1"
+	},
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -6,
+			"z" : -1
+		},
+		"scale" :
+		{
+			"x" : 25,
+			"y" : 5,
+			"z" : 10
+		},
+		"texture" : "l3event2"
+	},
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -6,
+			"z" : -1
+		},
+		"scale" :
+		{
+			"x" : 25,
+			"y" : 5,
+			"z" : 10
+		},
+		"texture" : "l3event3"
+	},
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -6,
+			"z" : -1
+		},
+		"scale" :
+		{
+			"x" : 25,
+			"y" : 5,
+			"z" : 10
+		},
+		"texture" : "l3event4"
+	},
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -6,
+			"z" : -2
+		},
+		"scale" :
+		{
+			"x" : 25,
+			"y" : 5,
+			"z" : 10
+		},
+		"texture" : "game_title"
+	},
+		{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -16,
+			"z" : -2
+		},
+		"scale" :
+		{
+			"x" : 25,
+			"y" : 5,
+			"z" : 10
+		},
+		"texture" : "leadDesigner"
+	},
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -26,
+			"z" : -2
+		},
+		"scale" :
+		{
+			"x" : 25,
+			"y" : 8,
+			"z" : 10
+		},
+		"texture" : "leadProgrammer"
+	},
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -39,
+			"z" : -2
+		},
+		"scale" :
+		{
+			"x" : 30,
+			"y" : 20,
+			"z" : 10
+		},
+		"texture" : "programmers"
+	},
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -59,
+			"z" : -2
+		},
+		"scale" :
+		{
+			"x" : 25,
+			"y" : 5,
+			"z" : 10
+		},
+		"texture" : "SFX_Music"
+	},
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : -69,
+			"z" : -2
+		},
+		"scale" :
+		{
+			"x" : 25,
+			"y" : 10,
+			"z" : 10
+		},
+		"texture" : "3DModeler"
+	}
+	],
+    "lights" :
+    [
+	{
+	    "position" :
+	    {
+			"x" : 1,
+			"y" : 5,
+			"z" : 1
+	    },
+	    "color" :
+	    {
+			"r" : 1.0,
+			"g" : 1.0,
+			"b" : 1.0
+	    },
+	    "radius" : 20.0
+	}
+    ],
+	"camera" :
+	{
+		"position" :
+		{
+			"x" : 0,
+			"y" : 3,
+			"z" : 3
+		},
+		"target" :
+		{
+			"x" : 0,
+			"y" : 3,
+			"z" : 0
+		},
+		"up" :
+		{
+			"x" : 0,
+			"y" : 1,
+			"z" : 0
+		},
+		"near" : 1,
+		"far" : 200.0,
+		"fov" : 65
+	},
+    // ambiant light
+    "ambiant" :
+    {
+		"r" : 0.4,
+		"g" : 0.4,
+		"b" : 0.4
+    },
+    // skybox this is what is display on the background before all
+    "skybox" :
+    {
+		"top" : "cloudy_noon_top",
+		"bottom" : "cloudy_noon_bottom",
+		"left" : "cloudy_noon_left",
+		"right" : "cloudy_noon_right",
+		"front" : "cloudy_noon_front",
+		"back" : "cloudy_noon_back"
+    }
+}

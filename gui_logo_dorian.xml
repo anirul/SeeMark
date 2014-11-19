@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ FATTYCURD MENU CONFIG
+ 
+ Resolution can be either absolute or relative if absolute then if the user
+ change resolution the objects will be missplaces! Relative positionning and
+ size express in part of fullscreen resolution
+ 
+ 0.0, 0.0        0.0, 1.0
+ screen
+ 1.0, 0.0        1.0, 1.0
+ 
+ Don't forget in case you use relative positionning to also specify the size
+ or it won't be correct!
+ 
+ FAQ
+ [Position] express the position of the CENTER of the object!
+ [timeout] floating value in second
+ [set-value] is a value that is send to the game engine
+ [linked-to] this value is linked to a value in the game engine
+ -->
+<sub-menu
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="fattycurd-sub-menu.xsd">
+	<still-state name="dorian_logo" goto-state="fattycurd_logo" timeout="4.0">
+
+		<set-value linked-to="fattycurd.camera" value="fixed"/>
+		
+		<trigger linked-to="sound_dorian"/>
+
+		<image coordinate="relative">
+			<position hpos="0.5" vpos="0.5"/>
+			<size width="1.0" height="1.0"/>
+			<location>Images/white.png</location>
+		</image>
+
+        <image coordinate="relative">
+			<position hpos="0.5" vpos="0.5"/>
+			<location>Images/logo-dorian_sred.png</location>
+		</image>
+	</still-state>
+</sub-menu>
+

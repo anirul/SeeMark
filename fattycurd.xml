@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ FATTYCURD MENU CONFIG
+ 
+ Resolution can be either absolute or relative if absolute then if the user
+ change resolution the objects will be missplaces! Relative positionning and
+ size express in part of fullscreen resolution
+ 
+ 0.0, 0.0        0.0, 1.0
+ screen
+ 1.0, 0.0        1.0, 1.0
+ 
+ Don't forget in case you use relative positionning to also specify the size
+ or it won't be correct!
+ 
+ FAQ
+ [Position] express the position of the CENTER of the object!
+ [timeout] floating value in second
+ [set-value] is a value that is send to the game engine
+ [linked-to] this value is linked to a value in the game engine
+ -->
+<menu
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="fattycurd-menu.xsd">
+	
+	<!-- start and end of the state machine -->
+	<set-value linked-to="fattycurd.menu.start" value="start"/>
+	<set-value linked-to="fattycurd.menu.end" value="end"/>
+	<!-- alpha off irr gui items! 0.0 transparent 1.0 full -->
+	<set-value linked-to="fattycurd.gui.alpha" value="0.75"/>
+
+	<!-- sound loading -->
+	
+	<set-value linked-to="fattycurd.sound.logo_kwakwa" value="Sound/logo_kwakwa.wav"/>
+	<set-value linked-to="fattycurd.music.logo_dorian" value="Sound/logo_dorian.ogg"/>
+	<set-value linked-to="fattycurd.music.level0_intro" value="Sound/intro_piano_seul.ogg" />
+	<set-value linked-to="fattycurd.music.level0_loop" value="Sound/piano_seul.ogg" />
+	<set-value linked-to="fattycurd.music.level1_loop" value="Sound/piano+guit.ogg" />
+	<set-value linked-to="fattycurd.music.level2_intro" value="Sound/intro_piano_tempete_master.ogg" />
+	<set-value linked-to="fattycurd.music.level2_loop" value="Sound/piano_tempete_master_after.ogg" />
+	<set-value linked-to="fattycurd.music.level3_loop" value="Sound/guitmast.ogg" />
+	<set-value linked-to="fattycurd.sound.level0_event0" value="Sound/dial1.ogg"/>
+	<set-value linked-to="fattycurd.sound.level0_event1" value="Sound/dial2.ogg"/>
+	<set-value linked-to="fattycurd.sound.level0_event2" value="Sound/dial3.ogg"/>
+	<set-value linked-to="fattycurd.sound.level0_event3" value="Sound/dial4.ogg"/>
+	<set-value linked-to="fattycurd.sound.level1_event0" value="Sound/dial5.ogg"/>
+	<set-value linked-to="fattycurd.sound.level1_event1" value="Sound/dial6.ogg"/>
+	<set-value linked-to="fattycurd.sound.level1_event2" value="Sound/dial7.ogg"/>
+	<set-value linked-to="fattycurd.sound.level2_event0" value="Sound/dial8.ogg"/>
+	<set-value linked-to="fattycurd.sound.level2_event1" value="Sound/dial9.ogg"/>
+	<set-value linked-to="fattycurd.sound.level2_event2" value="Sound/dial10.ogg"/>
+	<set-value linked-to="fattycurd.sound.level2_event3" value="Sound/dial11.ogg"/>
+	<set-value linked-to="fattycurd.sound.level2_event4" value="Sound/dial12.ogg"/>
+	<set-value linked-to="fattycurd.sound.level2_event5" value="Sound/dial13.ogg"/>
+	<set-value linked-to="fattycurd.sound.level3_event0" value="Sound/dial15.ogg"/>
+	<set-value linked-to="fattycurd.sound.level3_event1" value="Sound/dial16.ogg"/>
+	<set-value linked-to="fattycurd.sound.level3_event2" value="Sound/dial17.ogg"/>
+	<set-value linked-to="fattycurd.sound.level3_event3" value="Sound/dial18.ogg"/>
+	<set-value linked-to="fattycurd.sound.level3_event4" value="Sound/dial19.ogg"/>
+	
+	<!-- scripts -->
+	<set-value linked-to="fattycurd.script.init" value="Scripts/init.js"/>
+	<set-value linked-to="fattycurd.script.sound_kwakwa" value="Scripts/sound_kwakwa.js"/>
+	<set-value linked-to="fattycurd.script.sound_dorian" value="Scripts/sound_dorian.js"/>
+	<set-value linked-to="fattycurd.script.update_level0" value="Scripts/update_level0.js"/>
+	<set-value linked-to="fattycurd.script.update_level1" value="Scripts/update_level1.js"/>
+	<set-value linked-to="fattycurd.script.update_level2" value="Scripts/update_level2.js"/>
+	<set-value linked-to="fattycurd.script.update_level3" value="Scripts/update_level3.js"/>
+
+	<!-- load sub menu -->
+    
+    <sub-menu file="gui_level0.xml"/>
+    <sub-menu file="gui_level1.xml"/>
+    <sub-menu file="gui_level2.xml"/>
+    <sub-menu file="gui_level3.xml"/>
+	<sub-menu file="gui_logo_kwakwa.xml"/>
+	<sub-menu file="gui_logo_dorian.xml"/>
+	<sub-menu file="gui_logo_fattycurd.xml"/>
+    <sub-menu file="gui_start.xml"/>
+	
+	
+</menu>

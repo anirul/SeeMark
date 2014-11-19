@@ -1,0 +1,14 @@
+<sub-menu
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="fattycurd-sub-menu.xsd">
+	<game-state
+		name="level2"
+		goto-state="end">
+
+		<set-value linked-to="fattycurd.world.models" value="models2.json"/>
+		<set-value linked-to="fattycurd.world.level" value="level2.json"/>
+
+		<trigger linked-to="update_level2"/>
+		
+	</game-state>
+</sub-menu>
